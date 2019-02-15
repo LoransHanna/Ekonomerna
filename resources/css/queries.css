@@ -10,10 +10,10 @@
     .client-objects {
         width: 70%;
     }
-    
+
     #header-section .row{
-    max-width: 80%;
-}
+        max-width: 80%;
+    }
 
 }
 
@@ -42,15 +42,15 @@
         width: 80%; 
 
     }
-  /*  .main-nav {
+    /*  .main-nav {
 
     margin-right: 50px;
 
 }*/
-    
+
     #header-section .row{
-    max-width: 90%;
-}
+        max-width: 90%;
+    }
 
 }
 
@@ -60,7 +60,7 @@
     section { padding: 60px 0; }
 
     .long-copy {
-        width: 80%;
+        width: 70%;
         margin-left: 10%;
     }
 
@@ -94,6 +94,41 @@
         margin-top: -30px;
 
     }
+    .contact-info{
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        align-items: stretch; 
+        justify-content: center; 
+        margin-top: 20px;
+        width: 75%; 
+        margin: 0 auto;
+    }
+
+    .information-contact{
+        flex: 1 0 30%;
+        flex-grow: 1;
+        padding: 10px;
+    }
+
+    .section-header .long-copy{
+        text-align: center;
+        line-height: 145%;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+
+
+    /*Team page*/
+    .flex-container-team{
+        width: 100%; 
+    }
+    .team_top{
+        flex: 1 0 40%;
+    }
+
+
 
 
 
@@ -103,9 +138,10 @@
     .items_featured_services {
         flex-direction: column; 
     }
-    #header-section .row{
-    max-width: 100%;
-}
+    #header-section .row,
+    #header-team .row{
+        max-width: 100%;
+    }
 
 
 }
@@ -190,7 +226,7 @@
         margin-top: -20px
     }
 
-    #services .row {
+    .section-services .row {
 
         width: 90%;
     }
@@ -269,6 +305,34 @@
     .client-objects {
         width: 100%;
 
+    }
+    .contact-info{
+        flex-direction: column; 
+    }
+
+    .section-services .row{
+        width: 100%;
+    }
+
+    .testimonial-item p{
+
+    }
+    #testimonials .testimonial-item {
+        max-width: 95%;
+
+    }
+#header-section #logo h1,
+#header-team #logo h1 {                                                               
+    font-size: 14px;
+
+}
+
+    /*Team page*/
+    .flex-container-team{
+        width: 100%; 
+    }
+    .team_top{
+        flex: 1 0 60%;
     }
 }
 

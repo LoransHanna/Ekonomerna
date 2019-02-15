@@ -214,7 +214,7 @@ input[type=submit] {
 
 
 #header-team{
-    position: fixed;
+   /* position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -222,7 +222,7 @@ input[type=submit] {
     transition: all 0.5s;
     /* box-shadow: 0 2px 2px #efefef; */
     z-index: 9999;
-    
+
 }
 .hero-text-box {
     position: absolute;
@@ -363,10 +363,15 @@ Slut test logo
 
 }
 
+#header-team .mobile-nav-icon{
+    margin-top: 10px;
+}
+
 .mobile-nav-icon i {
     font-size: 200%;
     color: #fff;
 }
+
 
 
 /* Sticky navi */
@@ -389,6 +394,15 @@ Slut test logo
     padding: 17px 0;
     color: #fff;
 }
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+    /* border-bottom: 2px solid #e67e22; */
+    color: #e67e22;
+    transition: color 0.2s;
+}
+
+
 .sticky #logo { 
     display: block; 
     margin-top: -30px;
@@ -454,51 +468,51 @@ Slut test logo
 
 /* Services Section
 --------------------------------*/
-#services {
+.section-services {
     background: #fff;
     background-size: cover;
     padding: 60px 0 40px 0;
 
 }
-#services .long-copy{
+.section-services .long-copy{
     text-align: center;
 }
-#services .row {
+.section-services .row {
     width: 95%;
 }
 
-#services .box {
+.section-services .box {
     margin-bottom: 30px;
     min-height: 250px;
 }
 
-#services .icon {
+.section-services .icon {
     float: left;
 }
 
-#services .icon i {
+.section-services .icon i {
     color: #e67e22;
     font-size: 36px;
     line-height: 1;
     transition: 0.5s;
 }
 
-#services .title {
+.section-services .title {
     margin-left: 60px;
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
 }
 
-#services .title a {
+.section-services .title a {
     color: #111;
 }
 
-#services .box:hover .title a {
+.section-services .box:hover .title a {
     color: #e67e22;
 }
 
-#services .description {
+.section-services .description {
     font-size: 14px;
     margin-left: 60px;
     line-height: 24px;
@@ -1115,12 +1129,18 @@ input[type=checkbox] {
 /* Contact Section
 --------------------------------*/
 #contact {
-  padding: 60px 0;
+    /*
+    padding: 60px 0;
     background-color: #fff;
+    */
+        background-color: #f8f8f8;
+    background-size: cover;
+    padding: 60px 0 40px 0;
+    position: relative;
 }
 
 .contact-info{
-        display: flex; 
+    display: flex; 
     flex-direction: row; 
     flex-wrap: wrap; 
     align-items: stretch; 
@@ -1131,111 +1151,111 @@ input[type=checkbox] {
 }
 
 .information-contact{
-        flex: 1 0 30%;
+    flex: 1 0 30%;
     flex-grow: 1;
     padding: 10px;
 }
 
 #contact .contact-info {
-  margin-bottom: 20px;
-  text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #contact .contact-info i {
-  font-size: 48px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #e67e22;
+    font-size: 48px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #e67e22;
 }
 
 #contact .contact-info address, #contact .contact-info p {
-  margin-bottom: 0;
-  color: #000;
+    margin-bottom: 0;
+    color: #000;
 }
 
 #contact .contact-info h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #999;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
 }
 
 #contact .contact-info a {
-  color: #000;
+    color: #000;
 }
 
 #contact .contact-info a:hover {
-  color: #e67e22;
+    color: #e67e22;
 }
 
 #contact .contact-address, #contact .contact-phone, #contact .contact-email {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  #contact .contact-address, #contact .contact-phone, #contact .contact-email {
-    padding: 20px 0;
-  }
+    #contact .contact-address, #contact .contact-phone, #contact .contact-email {
+        padding: 20px 0;
+    }
 }
 
 @media (min-width: 768px) {
-  #contact .contact-phone {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
+    #contact .contact-phone {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
 }
 
 #contact .form #sendmessage {
-  color: #e67e22;
-  border: 1px solid #e67e22;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 #contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 #contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
-  display: block;
+    display: block;
 }
 
 #contact .form .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 #contact .form input, #contact .form textarea {
-  padding: 10px 14px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 15px;
+    padding: 10px 14px;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
 }
 
 #contact .form button[type="submit"] {
-  background: #e67e22;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
+    background: #e67e22;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 #contact .form button[type="submit"]:hover {
-  background: #13a456;
+    background: #13a456;
 }
 
 .co {
